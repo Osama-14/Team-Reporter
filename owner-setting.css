@@ -104,18 +104,9 @@ legend{
 	outline: 0;
 }
 
-
-
-
-
- 
-
-
-
-
-  .owner_resposive{
-	  display: none;
-  }
+.owner_resposive{
+  display: none;
+}
 
   @media(max-width: 471px){
 .owner{
