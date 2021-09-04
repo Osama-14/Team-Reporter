@@ -35,8 +35,13 @@ input{
     border-bottom: 2px solid #d3d3d3;
     box-shadow: none;
     color: #111;
-    width: 460px;
+    width: 100%;
     font-size: 30px;
+}
+
+
+.input-field{
+  padding: 10px;
 }
 
 input:focus{
@@ -116,5 +121,18 @@ input:required:focus{
 
 
 
+
+@media(max-width: 464px){
+  .button{
+    width: 67%;
+    height: 50%;
+    padding-left: 15%;
+
+  }
+
+  .input-1{
+    width: 300px;
+  }
+}
 
 

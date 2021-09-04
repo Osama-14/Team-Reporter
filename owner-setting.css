@@ -92,7 +92,7 @@ legend{
 
 .ans{
 	border-top: none;
-    padding-left: 13%;
+    padding-left: 0%;
     border-right: none;
     border-left: none;
 	width: 40%;
@@ -134,3 +134,18 @@ legend{
 		font-size: 10px;
 	}
   }
+
+  @media(max-width: 571px){
+    .ans{
+      padding-left: 0%;
+      padding-right: 59px;
+      font-size: 8px;
+    }
+    }
+
+    @media(max-width: 861px){
+      .questions{
+        font-size: 20px;
+    
+      }
+      }
