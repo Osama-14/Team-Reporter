@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
-    <div class="main-container">
-        <div class="field-set">
-            <fieldset>
-                <legend>Sign Up</legend>
-                <div class="for-input">
 
-                    <div class="input-1">
+  <div class="main-container">
+    <fieldset>
+      <legend>Sign Up</legend>
+      <div class="for-input">
 
-                        <div class="input-field">
-                      <p>  FUllName*</p> <br>
-                     
-                        <input type="text" name="" id="" required/> <br> <br>
-                        <p>Email*</p> <br>
-                        <input type="email" name="" id="" required/> <br> <br>
-                      <p> Password*</p>
-                        <br>
-                        <input type="password" required/>
-                    </div>
-                        <div class="button">
-                        
-                            <a href="./login .html" class="button"><span>SignUp </span></a>
-    
-                        </div>
-              </fieldset>
+        <div class="input-1">
 
-                </div>
-            </div>
+          <div class="input-field">
+            <p> FUllName*</p> <br>
+
+            <input type="text" name="" id="fullname" required /> <br> <br>
+            <p>Email*</p> <br>
+            <input onchange="check()" type="email" name="" id="email" required /> <br> <br>
+            <p> Password*</p>
+            <br>
+            <input type="password" id="password" required />
+          </div>
+          <div class="button">
+            <span> <a onclick="signup()" class="button">SignUp</a></span>
+
+            <!-- <span> <a href="./login .html" class="button">SignUp</a></span> -->
+          </div>
         </div>
 
-    </div>
+      </div>
+    </fieldset>
 
+
+  </div>
+
+<script src="app.js"></script>
 </body>
+
 </html>

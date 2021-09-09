@@ -18,3 +18,26 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+
+  function signup(){
+    let email = document.getElementById("email").value;
+    let fullname = document.getElementById("fullname").value;
+    let password = document.getElementById("password").value;
+
+
+  //  let JSON.parse(localStorage.getItem("users")
+    let userObj = {
+     email:email,
+     fullname:fullname,
+     password:password 
+    }
+
+    localStorage.setItem("users", JSON.stringify(userObj));
+
+  let parsedObj =   JSON.parse(localStorage.getItem("users"));
+// if(parsedObj.email === &&[s]{
+
+// })
+    window.location.href = "login.html"
+  }
