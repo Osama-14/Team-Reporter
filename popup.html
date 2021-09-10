@@ -34,6 +34,13 @@
         </button>
 
 
+        <div>Team you own</div>
+        <div id="teamowner"></div>
+
+        <div>Team you are part of</div>
+
+        <div id="teamspartof"></div>
+
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -44,16 +51,16 @@
 
 
                         <div class="first-field">
-                            <input type="text" name="" id="" placeholder="Team Name" />
+                            <input type="text" name="" id="teamname" placeholder="Team Name" />
                         </div>
 
 
                         <div class="options">
-                            <select name="" id="">
+                            <select name="" id="category" >
                                 <option value="">Category</option>
-                                <option value="">Developer</option>
-                                <option value="">Backend</option>
-                                <option value="">Frontend</option>
+                                <option value="Developer">Developer</option>
+                                <option value="Backend">Backend</option>
+                                <option value="Frontend">Frontend</option>
 
                             </select>
                         </div>
@@ -61,12 +68,12 @@
 
                         <div class="second-field">
 
-                            <input type="text" name="" placeholder="Members type (Email)" />
+                            <input type="text" name="" placeholder="Members type (Email)" id="members" />
                         </div>
 
 
                         <div class="allbtn">
-                            <button class="btn1">Create</button>
+                            <button class="btn1" onclick="createNewTeam()" >Create</button>
                             <button class="btn2">Cancel</button>
                         </div>
 
@@ -100,6 +107,8 @@
         crossorigin="anonymous"></script>
 
 
+
+        <script src="./app.js"></script>
 
 
 </body>

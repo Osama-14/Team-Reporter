@@ -248,6 +248,28 @@ legend{
 
 
 
+.navs{
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+#sel{
+  width: 15%;
+  height: 40px;
+
+}
+
+#inp{
+
+  width: 18%;
+
+}
+
+
+
 
 
 

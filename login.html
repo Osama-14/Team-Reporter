@@ -21,14 +21,17 @@
 
                     <div class="input-field">
                         <p>Email*</p> <br>
-                        <input type="email" name="" id="" required /> <br> <br>
+                        <input type="email" name="" id="loginEmail" required /> <br> <br>
                         <p> Password*</p>
                         <br>
-                        <input type="password" required />
+                        <input type="password" id="loginPassword" required />
                     </div>
                     <div class="button">
 
-                       <span> <a href="./team-owner-setting.html" class="button"> Login</a> </span>                    </div>
+                        <span> <a onclick="login()" class="button">Login</a></span>
+
+
+                       <!-- <span> <a href="./team-owner-setting.html" class="button" onclick="login()"> Login</a> </span>                    </div> -->
                 </div>
 
             </div>
@@ -37,6 +40,8 @@
 
     </div>
 
+
+    <script src="./app.js"></script>
 
 </body>
 
