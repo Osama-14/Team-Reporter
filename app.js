@@ -24,8 +24,6 @@ function signup() {
   let fullname = document.getElementById("fullname").value;
   let password = document.getElementById("password").value;
 
-
-
   //  let JSON.parse(localStorage.getItem("users")
   let userObj = {
     email: email,
@@ -151,8 +149,7 @@ function getTeams() {
         divStyle.width = "50%";
         divStyle.margin = "2% auto";
 
-        div.onclick = function () 
-        {
+        div.onclick = function () {
           window.location.href = "team-owner-setting.html";
         };
         teamname.innerHTML = parsedArray[i].teamname;
@@ -170,17 +167,14 @@ function getTeams() {
         divStyle.padding = "10px";
         divStyle.width = "50%";
         divStyle.margin = "2% auto";
-        div.onclick = function () 
-        {
+        div.onclick = function () {
           window.location.href = "team-owner-setting.html";
         };
 
         teamname.innerHTML = parsedArray[i].teamname;
         div.append(teamname);
         teamspartof.append(div);
-  
       }
-
     }
   }
 }
