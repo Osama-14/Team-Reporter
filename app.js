@@ -22,7 +22,9 @@ function openCity(evt, cityName) {
 function signup() {
   let email = document.getElementById("email1").value;
   let fullname = document.getElementById("fullname").value;
-  let password = document.getElementById("password1").value;
+  let password = document.getElementById("password").value;
+
+
 
   //  let JSON.parse(localStorage.getItem("users")
   let userObj = {
@@ -33,7 +35,7 @@ function signup() {
 
   let parsedArray = JSON.parse(localStorage.getItem("users"));
 
-  if (parsedArray) {
+  if (parsedArray && parsedArray.length) {
     for (var i = 0; i < parsedArray.length; i++) {
       if (parsedArray[i].email === email) {
         alert("user already exists");
@@ -109,7 +111,7 @@ function createNewTeam() {
 }
 
 function updateTeamUi(teamObj) {
-  let teamownerdiv= document.getElementById("teamowner");
+  let teamownerdiv = document.getElementById("teamowner");
 
   let div = document.createElement("div");
   let teamname = document.createElement("div");
@@ -149,12 +151,13 @@ function getTeams() {
         divStyle.width = "50%";
         divStyle.margin = "2% auto";
 
+        div.onclick = function () {
+          window.location.href = "team-owner-setting.html";
+        };
         teamname.innerHTML = parsedArray[i].teamname;
         div.append(teamname);
         teamownerdiv.append(div);
-      }
-
-      else{
+      } else {
         let div = document.createElement("div");
         let teamname = document.createElement("div");
         let category = document.createElement("div");
@@ -166,11 +169,12 @@ function getTeams() {
         divStyle.padding = "10px";
         divStyle.width = "50%";
         divStyle.margin = "2% auto";
-
         teamname.innerHTML = parsedArray[i].teamname;
         div.append(teamname);
         teamspartof.append(div);
+  
       }
+
     }
   }
 }
